@@ -1,24 +1,3 @@
-/* Box Model Hack */
-* {
-   -webkit-box-sizing: border-box;
-      -moz-box-sizing: border-box;
-           box-sizing: border-box;
-}
-
-/* Clear fix hack */
-.clearfix:after {
-   content: ".";
-   display: block;
-   clear: both;
-   visibility: hidden;
-   line-height: 0;
-   height: 0;
-}
-
-.clear {
-   clear: both;
-}
-
 /******************************************
 /* BASE STYLES
 /*******************************************/
@@ -56,10 +35,17 @@ h1 {
 
 h2 {
    font-size: 6em;
+   margin-top: 0;
+   margin-bottom: 3rem;
 }
 
-span, p {
-   font-size: 4em;
+h3 {
+   font-size: 5em;
+}
+
+span, p, table {
+   font-size: 5em;
+   margin-top: 0;
 }
 
 .primary-color {
@@ -72,4 +58,14 @@ span, p {
 
 span {
    display: block;
+}
+
+.flex {
+   display: flex;
+   justify-content: center;
+   gap: 15em;
+}
+
+table {
+   margin: 0 auto 2rem auto;
 }
